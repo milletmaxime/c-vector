@@ -37,7 +37,7 @@ typedef struct
 {
 	vec_size_t size;
 	vec_size_t capacity;
-	unsigned char data[]; 
+	unsigned char data[];
 } vector_header;
 
 vector_header* vector_get_header(vector vec) { return &((vector_header*)vec)[-1]; }
@@ -122,6 +122,8 @@ void _vector_remove(vector vec, vec_type_t type_size, vec_size_t pos)
 }
 
 void vector_pop(vector vec) { --vector_get_header(vec)->size; }
+
+void vector_clear(vector vec) { vector_get_header(vec)->size = 0; }
 
 void _vector_reserve(vector* vec_addr, vec_type_t type_size, vec_size_t capacity)
 {

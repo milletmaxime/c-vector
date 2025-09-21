@@ -148,6 +148,8 @@ Some functions and macros take a normal vector argument, e.g. `vec`, while other
 | insert `item` into `vec` at index `9`   | `vector_insert(&vec, 9, item)`             | yes                     |
 | erase `4` items from `vec` at index `3` | `vector_erase(vec, 3, 4);`                 | no (moves elements)     |
 | remove item at index `3` from `vec`     | `vector_remove(vec, 3);`                   | no (moves elements)     |
+| remove last item from `vec`             | `vector_pop(vec);`                         | no                      |
+| erase all items from `vec`              | `vector_clear(vec);`                       | no                      |
 | get the number of items in `vec`        | `int size = vector_size(vec);`             | no                      |
 | get the storage capacity of `vec`       | `int capacity = vector_get_capacity(vec);` | no                      |
 | add `item` to the vector `vec`          | `type* temp = vector_add_dst(&vec);`       | yes                     |
