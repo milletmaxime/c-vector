@@ -30,8 +30,8 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#ifndef vec_h
-#define vec_h
+#ifndef VEC_H
+#define VEC_H
 
 #ifdef __cpp_decltype
 #include <type_traits>
@@ -126,4 +126,4 @@ vec_size_t vector_capacity(vector vec);
 }
 #endif
 
-#endif /* vec_h */
+#endif /* VEC_H */
